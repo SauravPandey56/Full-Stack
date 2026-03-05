@@ -1,43 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-<!--table-->
- <caption>Student Information</caption>
-<table border="black">
-    <tr>
+  </head>
+  <body>
+    <!--table-->
+    <caption>
+      Student Information
+    </caption>
+    <table border="black">
+      <tr>
         <th rowspan="6">info</th>
         <th rowspan="2">Name</th>
         <th colspan="2">Address</th>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <th>City</th>
         <th>House</th>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>A</td>
         <td>Delhi</td>
         <td>1</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>B</td>
         <td>Mumbai</td>
         <td>2</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>C</td>
         <td>Kolkata</td>
         <td>3</td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>D</td>
         <td>Pune</td>
         <td>4</td>
-    </tr>
-</table>
-</body>
+      </tr>
+    </table>
+    <br/>
+    <br/>
+    <br/>
+    <!--Form-->
+    <form action="">
+        <label for="name">Name: </label>
+        <input type="name" name="" id="name">
+        <br/>
+        <br/>
+        <label for="sex">Sex:</label>
+        <input type="radio" name="sex" id="Male"value="Male">
+        <label for="male">male</label>
+        <input type="radio" name="sex" id="female"value="femsale">
+        <label for="female">female</label>
+        <br/>
+        <br/>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option>Select An Option</option>
+            <option value="india">India</option>
+            <option value="lanka">SriLanka</option>
+            <option value="bangladesh">Bangladesh</option>
+            <option value="china">China</option>
+        </select>
+        <br/>
+        <br/>
+       <label for="message">Message:</label><br/>
+       <textarea maxlength="50" cols="30" rows="4" name="message" id="message"></textarea>
+       <br/>
+       <br/>
+       <input type="checkbox"name="subscribe"value="subscribe"id="subscribe">
+       <label for="subscribe">Subscribe?</label>
+       <br/>
+       <br/>
+       <button >
+        submit
+       </button>
+
+    </form>
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+    
+  </body>
 </html>
