@@ -50,10 +50,16 @@
     <!-- forms-->
 
     <form action="/action">
-       Name: <input type="text"><br>
-       Sex : <input type="radio">male <input type="radio">female <br>
-       Country :<select name="country" id="ctr">
-        <option value="nnn">Select an option</option>
+       <label for="name">name:</label>
+       <input type="text" name="name"><br>
+       <label for="sex">SEX:</label>
+       <input type="radio" name="sex" id="male" value="male">
+       <label for="male">Male</label>
+       <input type="radio" name="sex" id="female" value="female">
+       <label for="female">female</label><br>
+       <label for="country">Country:</label>
+       <select name="country" id="ctr">
+        <option >Select an option</option>
         <option value="ind">india</option>
         <option value="ger">germeny</option>
         <option value="ire">ireland</option>
@@ -61,10 +67,12 @@
         <option value="Sl">sri lanka</option>
         <option value="nwz">nwzeland</option>
        </select><br>
-       Message : <textarea name="comment" id="ct" cols="9" rows="3"></textarea>
+       <label for="message">Message : </label>
+        <textarea name="message" id="message" cols="30" rows="3"></textarea>
        <br>
 
-       <input type="checkbox">Subscribe?
+       <input type="checkbox" name="nl" id="nl">
+       <label for="nl">Subscribe?</label>
        <br>
        <button type="submit">Submit</button>
 
@@ -80,16 +88,16 @@
             <input type="email" id="email" placeholder="write your email"><br>
             <label for="comment ">Message:</label><br>
             <textarea name="comment" id="comment"></textarea><br>
-            <label for="radio">Rate us our of 5 :</label><br>
-            <input type="radio">
+            <label for="rating">Rate us our of 5 :</label><br>
+            <input type="radio" name="rating" id="one" value="one">
             <label for="one">1</label><br>
-            <input type="radio">
+            <input type="radio"name="rating" id="two" value="two">
             <label for="two">2</label><br>
-            <input type="radio">
+            <input type="radio"name="rating" id="three" value="three">
             <label for="three">3</label><br>
-            <input type="radio">
+            <input type="radio"name="rating" id="four" value="four">
             <label for="four">4</label><br>
-            <input type="radio">
+            <input type="radio"name="rating" id="five" value="five">
             <label for="five">5</label><br>
             <button type="submit">send your message</button>
         </fieldset>
