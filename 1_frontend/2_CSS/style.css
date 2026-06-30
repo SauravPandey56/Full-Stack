@@ -19,3 +19,54 @@
     background-color: green;
     color: aliceblue;
  }
+ /* decendent selector*/
+ .post a {
+   color: purple;
+   background-color: yellow;
+ }
+ nav ul li a{
+   color: hotpink;
+ }
+ p+h3{
+   text-decoration: underline;
+
+ }
+ .upvote+button{
+   background-color: cornflowerblue;
+   color: darkblue;
+ }
+ div > input{
+   background-color: darksalmon;
+ }
+ input[type="text"]{
+   color: red;
+ }
+ input[type="password"]{
+   color: green;
+ }
+ input[type]{
+   background-color: ghostwhite;
+ }
+ button:hover{
+   background-color: black;
+   color: white;
+ }
+ button:active{
+   background-color: hotpink;
+   color: black;
+ }
+ p:active{
+   font-weight: bold;
+   color: green;
+ }
+ input[type="radio"]:checked + label{
+   color: red;
+   font-weight: bold;
+ }
+ .post:nth-of-type(2){
+   background-color: bisque;
+ }
+ h1::first-letter{
+   color:rgba(0, 0, 0, 0.608);
+ }
+ 
