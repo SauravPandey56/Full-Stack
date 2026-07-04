@@ -187,11 +187,11 @@ a{
 
 .album{
     width: 25%;
-    background-color: pink;
+    background-color: magenta;
 }
 .player{
     width: 50%;
-    /* background-color: orange; */
+    
 }
 .controls{
     width: 25%;
