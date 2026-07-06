@@ -27,8 +27,46 @@
 
 // while loop 
 
-let i = 1; 
-while(i<=20){
-    console.log(i);
-    i++;
+// let i = 1; 
+// while(i<=20){
+//     console.log(i);
+//     i++;
+// }
+
+// loops with Array 
+// let fruits =["mango","apple","banana","litchi","orange"];
+// for(let i = 0; i<fruits.length; i++){
+//     console.log(i , fruits[i]);
+// }
+
+// nested loop with nested array 
+// let student = [
+//     ["aman" ,94],
+//     ["saurav", 62],
+//     ["prk", 66]
+// ];
+// for(let i = 0; i<student.length; i++){
+//     console.log(`info of student ${i}`);
+//     for(let j = 0 ; j<student.length;j++){
+//         console.log(student[i][j]);
+//     }
+// }
+
+//for of loop 
+// let fruits =["mango","apple","banana","litchi","orange"];
+// for(fruitList of fruits){
+//     console.log(fruitList);
+// }
+
+// Nested for of loop 
+let student = [
+    ["aman" ,94],
+    ["saurav", 62],
+    ["prk", 66]
+];
+for(list of student){
+    for(info of list){
+        console.log(info)
+    }
+    
 }
