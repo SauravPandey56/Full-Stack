@@ -9,8 +9,8 @@ while(true){
     }
     if(req == "list"){
         console.log("------------");
-        for(task of todo){
-            console.log(task);
+        for(let i= 0; i< todo.length; i++){
+            console.log(i,todo[i]);
         }
     }else if (req =="add"){
         let task = prompt("please enter the task you want to add ");
