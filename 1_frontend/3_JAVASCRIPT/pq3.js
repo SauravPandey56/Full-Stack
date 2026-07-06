@@ -36,4 +36,4 @@ let game =[["x,",null,'0'],["null",'x','null'],["0",null,'x']]
 game[0]
 
 game[0][1] = '0';
-console.log(game[0  ])
+console.log(game[0])
