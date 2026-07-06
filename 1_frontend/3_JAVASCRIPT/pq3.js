@@ -29,3 +29,7 @@ lngs.push("sql");
 let newLngs = lngs.reverse().indexOf("javascript");
 console.log(lngs);
 console.log(newLngs);
+
+//pq 4 
+// Create a nexted array to show the following tic-tac-toe  game state
+let game =[["x,",null,'0'],["null",'x','null'],["0",null,'x']] 
