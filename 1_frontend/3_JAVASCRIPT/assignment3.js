@@ -31,6 +31,17 @@
 // }
 
 //Qs5.Write a JavaScript program to strip leading andt railing spaces from a string.
-let str = prompt("enter the string ");
-console.log(`original string : ${str}`);
-console.log(`without extra space : ${str.trim()}`);
+// let str = prompt("enter the string ");
+// console.log(`original string : ${str}`);
+// console.log(`without extra space : ${str.trim()}`);
+
+
+// Qs6.Write a JavaScript program to check if an element exists in an array or not.
+let arr =["helloo " ,'a',65,32,-565,535];
+let item = 64;
+ if (arr.includes(item) != false){
+    console.log('elements exists');
+
+ }else{
+    console.log("element not exists");
+ }
