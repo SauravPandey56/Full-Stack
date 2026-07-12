@@ -28,6 +28,7 @@ console.log(count);
 //Example:if number = 287152 ,sum=25
 let numb = 287152 ;
 let sum = 0;
+
 while (numb >0){
      let remainder = numb%10;
     sum = sum + remainder;
