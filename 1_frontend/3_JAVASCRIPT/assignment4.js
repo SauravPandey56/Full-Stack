@@ -12,12 +12,12 @@ for( let i = 0 ; i <= arr.length; i++){
 }
 console.log(arr);
 
-
 // Qs2. Write a JS program to find the no of digits in a number.
 //Example:if number = 287152 ,count=6
 
 let number = 234344;
 let count = 0;
+
 while (number > 0) {
     number = Math.floor(number / 10);
     count++;
