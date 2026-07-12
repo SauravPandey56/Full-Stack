@@ -20,3 +20,12 @@
 // }else {
 //     console.log("string is not blank");
 // }
+
+//  Qs4.Write a JavaScript program to test whether the character at the given (character) index is lower case.
+let str = prompt("enter the string");
+let idx = prompt("enter the index for checking charcter case");
+if(str[idx]== str[idx].toLowerCase()){
+    console.log("character is in lower case");
+}else{
+    console.log("not in lower case");
+}
