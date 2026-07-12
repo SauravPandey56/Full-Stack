@@ -30,7 +30,7 @@ let numb = 287152 ;
 let sum = 0;
 
 while (numb >0){
-     let remainder = numb%10;
+    let remainder = numb%10;
     sum = sum + remainder;
     numb = Math.floor(numb / 10);
 } 
@@ -39,6 +39,7 @@ console.log(sum);
 //Qs4.Print thef actorial of a number n.
 let n = prompt("enter the number ");
 let fact = 1;
+
 for(let i = 1 ; i<=n ; i++){
     if(n == 0 ){
         console.log(`factorial of zero is 1`);
