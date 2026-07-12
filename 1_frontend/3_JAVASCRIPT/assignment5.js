@@ -12,3 +12,19 @@ const car = {
     color:"black"
 };
 console.log(car);
+
+// Qs3.Create an object Person with their name,age and city  
+//Edit their city’s original value to change it to “NewYork”.
+//Add a new property country and set it to the United States.
+
+const Person  ={
+     name:"saurav",
+     age:22,
+     city:"Patan"
+};
+console.log(Person);
+
+Person.city ="NewYork";
+Person.country ="United states"
+
+console.log(Person);
