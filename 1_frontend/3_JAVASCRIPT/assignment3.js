@@ -22,10 +22,15 @@
 // }
 
 //  Qs4.Write a JavaScript program to test whether the character at the given (character) index is lower case.
-let str = prompt("enter the string");
-let idx = prompt("enter the index for checking charcter case");
-if(str[idx]== str[idx].toLowerCase()){
-    console.log("character is in lower case");
-}else{
-    console.log("not in lower case");
-}
+// let str = prompt("enter the string");
+// let idx = prompt("enter the index for checking charcter case");
+// if(str[idx]== str[idx].toLowerCase()){
+//     console.log("character is in lower case");
+// }else{
+//     console.log("not in lower case");
+// }
+
+//Qs5.Write a JavaScript program to strip leading andt railing spaces from a string.
+let str = prompt("enter the string ");
+console.log(`original string : ${str}`);
+console.log(`without extra space : ${str.trim()}`);
