@@ -47,3 +47,14 @@ for(let i = 1 ; i<=n ; i++){
     fact*=i;
 }
 console.log(`factorial of ${n} is ${fact}`);
+
+//Qs5.Find the largest number in an array with only positive numbers.
+let array =[2,3,4,5,6,78,99];
+let largest = 0;
+
+for( let i = 0 ; i<array.length; i++){
+    if(largest < array[i]){
+        largest = array[i];
+    }
+}
+ console.log(`the largest element is ${largest}`)
