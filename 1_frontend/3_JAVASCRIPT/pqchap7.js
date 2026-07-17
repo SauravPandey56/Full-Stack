@@ -45,3 +45,11 @@ const mul = (a,b)=>(
     a*b
 );
 console.log(mul(3,4));
+
+// SET TIMEOUT
+ 
+console.log("hi there !");
+setTimeout(() => {
+    console.log("apna college");
+}, 4000);
+console.log ("welcome  to ");
