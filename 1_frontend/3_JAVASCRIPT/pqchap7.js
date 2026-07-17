@@ -53,3 +53,18 @@ setTimeout(() => {
     console.log("apna college");
 }, 4000);
 console.log ("welcome  to ");
+
+// set interval 
+
+setInterval(() => {
+    console.log("saurav ");
+}, 2000);
+
+// problem in setINterval fixed 
+let id =setInterval(() => {
+             console.log("hello ");
+        }, 2000);
+
+console.log(`id is : ${id}`);
+
+clearInterval(id);        
