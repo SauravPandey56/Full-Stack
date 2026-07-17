@@ -107,3 +107,14 @@ function outerFunc(){
     innerFunction();
     
 }
+// 7PQ what will be the output ?
+let greet = "hello";
+function changeGreet(){
+    let greet = 'namaste';
+    console.log (greet);
+
+    function ineerGreet(){
+        console.log(greet);
+    }
+}console.log(greet);
+changeGreet();
