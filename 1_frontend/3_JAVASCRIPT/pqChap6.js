@@ -39,3 +39,12 @@ function calcAvg(a,b,c){
     console.log(avg);
 }
 calcAvg(1,2,3);
+
+// 4PQ create a function that prints the multiplication  table of a number 
+
+function table(n){
+    for(let i=n ; i<= n*10 ; i+=n){
+        console.log(i);
+    }
+}
+table(5);
