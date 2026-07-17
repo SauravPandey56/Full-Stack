@@ -32,3 +32,9 @@ const sum = (a,b) =>{
     console.log(a+b);
 };
 sum(4,5);
+
+const square = n =>{
+    console.log(n*n);
+};
+
+square(4);
