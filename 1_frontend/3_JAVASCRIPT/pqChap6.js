@@ -83,3 +83,27 @@ function concat(str){
     }
     return result;
 }
+// lexical scope 
+
+function outerFunction(){
+    let x = 5;
+    let y = 6;
+    function innerFunction(){
+        console.log(x);
+    }
+    innerFunction();
+}
+
+// or we can also do this 
+// without declarinf varible frist we can use it in function 
+// this is known [HOISTING]
+
+function outerFunc(){
+    function innerFunction(){
+        console.log(y);
+    }
+    let x = 5;
+    let y = 6;
+    innerFunction();
+    
+}
