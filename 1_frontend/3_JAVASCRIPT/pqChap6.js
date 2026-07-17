@@ -120,7 +120,8 @@ function changeGreet(){
 changeGreet();
 
 // FUNCTION EXPRESSION 
- 
+ // -->> ALL THE OPERATION WHICH CAN WE PERFORM ON VARIABLE
+ //  WE CAN ALSO PERFORM ON A FUNCTION BY USINF FINCTION EXPRESSION
 const sum = function(a,b){
     return a+b;
 
@@ -130,7 +131,25 @@ let hell = function(){
     console.log("hello");
 }
 
-
+// update the value
 hell = function(){
     console.log("hi");
 }
+
+//HIGHER ORDER FUNCTION
+// 1. THIS FUNCTION TAKES ONE OR MULTIPLE FUNCTION AS ARGUMENTS
+
+function multipleGreet(func , n){
+    for(let i = 1 ; i<= n; i++){
+        func();
+    }
+}
+let gret = function(){
+    console.log("hello");
+}
+multipleGreet(gret , 3);//-->> if we use this so we dont need use ()
+ //after gret . we only required to write function NAME for  example  above line 150 gret
+
+// we can also do this we can directly use function defination 
+multipleGreet(function(){console.log("hiii");},6);
+// but when we use this type here we need write function with() EX line 154 function()
