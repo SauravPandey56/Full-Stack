@@ -118,3 +118,19 @@ function changeGreet(){
     }
 }console.log(greet);
 changeGreet();
+
+// FUNCTION EXPRESSION 
+ 
+const sum = function(a,b){
+    return a+b;
+
+}
+sum(2,3);
+let hell = function(){
+    console.log("hello");
+}
+
+
+hell = function(){
+    console.log("hi");
+}
