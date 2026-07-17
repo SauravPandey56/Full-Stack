@@ -171,3 +171,32 @@ function oddEvenTest(request){
 let request = "even";
 let func = oddEvenTest(request);
 func(6);
+
+//  METHODS
+
+const calculator = {
+    add:function(a,b){
+        return a+b ;
+    },
+     sud:function(a,b){
+        return a-b ;
+    },
+     mul:function(a,b){
+        return a*b ;
+    }
+};
+console.log(calculator.add(2,88));
+
+// shorthand of methods 
+
+const calculatr = {
+    add(a,b){
+        return a+b ;
+    },
+     sud(a,b){
+        return a-b ;
+    },
+     mul(a,b){
+        return a*b ;
+    }
+};
