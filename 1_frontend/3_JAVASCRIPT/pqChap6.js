@@ -61,7 +61,7 @@ function isAdult(age){
 let adult = isAdult(13);
 console.log(adult);
 
-// create a function that return the sum of numbers from 1 to n.
+// 5PQ create a function that return the sum of numbers from 1 to n.
 
 function getSum(n){
     
@@ -70,4 +70,16 @@ function getSum(n){
         sum +=i;
     }
     return sum;
+}
+
+// 6PQ create a function that return the concatnation of all strings in an array.
+
+let str = ["hi","hello","namesta","bye","!"];
+
+function concat(str){
+    result = "";
+    for(let i = 0 ; i<str.length;i++){
+        result+= str[i];
+    }
+    return result;
 }
