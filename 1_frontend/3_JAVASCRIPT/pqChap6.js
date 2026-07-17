@@ -48,3 +48,15 @@ function table(n){
     }
 }
 table(5);
+
+//return keyword 
+
+function isAdult(age){
+    if(age >= 18){
+        return " adult";
+    }else{
+        return " not adult";
+    }
+}
+let adult = isAdult(13);
+console.log(adult);
