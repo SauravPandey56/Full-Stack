@@ -15,3 +15,14 @@ const student = {
 function getAvg(){
     console.log(this);
 }
+
+// try and catch
+
+console.log("hello");
+try{
+    console.log(a);
+}catch(err){
+    console.log("caught an error ...");
+    console.log(err);
+}
+console.log("hello2");
