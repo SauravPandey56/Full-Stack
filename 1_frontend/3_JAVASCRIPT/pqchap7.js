@@ -26,3 +26,9 @@ try{
     console.log(err);
 }
 console.log("hello2");
+
+// Arrow Function
+const sum = (a,b) =>{
+    console.log(a+b);
+};
+sum(4,5);
