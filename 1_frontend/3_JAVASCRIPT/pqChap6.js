@@ -20,3 +20,12 @@ function diceRoll(){
     console.log(rand);
 }
 diceRoll();
+
+// function with arguments
+
+function printInfo(name , age){
+    console.log(`${name}'s age is ${age}.`);
+}
+printInfo("Saurav" , 21);
+printInfo("saurav");
+printInfo(21);
