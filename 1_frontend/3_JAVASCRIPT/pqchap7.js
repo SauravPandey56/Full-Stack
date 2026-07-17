@@ -38,3 +38,10 @@ const square = n =>{
 };
 
 square(4);
+
+//  IMPLICIT RETURN IN ARROW Function 
+
+const mul = (a,b)=>(
+    a*b
+);
+console.log(mul(3,4));
