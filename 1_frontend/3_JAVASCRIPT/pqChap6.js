@@ -108,13 +108,13 @@ function outerFunc(){
     
 }
 // 7PQ what will be the output ?
-let greet = "hello";
+let greet = "hello";    //global scope
 function changeGreet(){
-    let greet = 'namaste';
+    let greet = 'namaste';  // function scope
     console.log (greet);
 
     function ineerGreet(){
-        console.log(greet);
+        console.log(greet); //lexical scope 
     }
 }console.log(greet);
 changeGreet();
@@ -153,3 +153,21 @@ multipleGreet(gret , 3);//-->> if we use this so we dont need use ()
 // we can also do this we can directly use function defination 
 multipleGreet(function(){console.log("hiii");},6);
 // but when we use this type here we need write function with() EX line 154 function()
+
+// 2. RETURN A FUNCTION
+function oddEvenTest(request){
+    if(request == "odd"){
+        return function(n){
+            console.log(!(n%2 == 0));
+        }
+    }else if (request == "even"){
+        return function(n){
+            console.log((n%2 == 0));
+        }
+    }else{
+        console.log("wrong request");
+    }    
+}
+let request = "even";
+let func = oddEvenTest(request);
+func(6);
