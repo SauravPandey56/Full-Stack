@@ -29,3 +29,13 @@ function printInfo(name , age){
 printInfo("Saurav" , 21);
 printInfo("saurav");
 printInfo(21);
+// pass the value of parameter order wise because js take value order wise
+// and if you miss the passing any value js consider is as undeifned.
+
+// 3PQ create a function that gives us the average of 3 numbers.
+
+function calcAvg(a,b,c){
+    let avg = (a+b+c)/3
+    console.log(avg);
+}
+calcAvg(1,2,3);
