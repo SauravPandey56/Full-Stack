@@ -55,3 +55,9 @@ let nums = [1,2,3,45,6,7,89,9,0];
 let ans = nums.filter ((el)=>{
     return el<5;
 });
+
+//EVERY 
+let evry = [2,4,6];
+ let rslt = evry.every((el)=>{
+   return el%2==0;
+});
