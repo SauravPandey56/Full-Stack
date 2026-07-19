@@ -61,3 +61,9 @@ let evry = [2,4,6];
  let rslt = evry.every((el)=>{
    return el%2==0;
 });
+
+// if you use curly brace {} then you must use return keyword 
+
+// some 
+let sme = [11,3,7,9];
+let reslt = sme.some((el)=> (el % 2 == 0));
