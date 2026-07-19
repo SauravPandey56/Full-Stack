@@ -14,4 +14,16 @@ let print =  function(el){
 };
 arr.forEach(print);
 
-// for o
+// for oobject
+let ary =[
+    {
+        name:"aman",
+        marks:95
+    },{
+        name:"shradha",
+        marks:96
+    }
+];
+ary.forEach((student)=>{
+    console.log(student.marks);
+});
