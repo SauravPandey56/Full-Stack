@@ -182,3 +182,19 @@
 let names =["tony","bruce","peter","steve"];
 let [winner , runnerup]= names;
 console.log (winner ,runnerup);
+
+// DESTRUCTURING with object 
+
+const student ={
+    name :"saurav",
+    age : 21,
+    class :"XII",
+    subjects : ["hindi","eng","phy","che"],
+    usernmae :"saurav@56",
+    password : "abcd"
+}
+let {usernmae,password}=student;
+
+let {usernmae :user ,password:secret , city:place="mumbai"}
+    =student;
+    console.log(user); 
