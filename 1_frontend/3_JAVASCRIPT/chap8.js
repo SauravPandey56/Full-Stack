@@ -124,10 +124,16 @@
 // let nums = [1,2,3,4,5,6,7,-22,-1,0];
 // console.log(getMin(nums)); // -22
 
-// default parameter
+// // default parameter
 
-function fxn (a,b=3){
-    return a+b ;
+// function fxn (a,b=3){
+//     return a+b ;
 
-}
-fxn(2);
+// }
+// fxn(2);
+
+// spread 
+console.log (..."apnacollege");
+let arr = [1,2,3,4,5];
+Math.min (...arr);
+console.log(...arr);
