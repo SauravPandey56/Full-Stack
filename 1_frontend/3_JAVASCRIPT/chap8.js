@@ -123,3 +123,11 @@
 // }
 // let nums = [1,2,3,4,5,6,7,-22,-1,0];
 // console.log(getMin(nums)); // -22
+
+// default parameter
+
+function fxn (a,b=3){
+    return a+b ;
+
+}
+fxn(2);
