@@ -79,12 +79,20 @@
 //     return res+el;
 // });
 
-let array = [1,4,2,5,6,7,8,7,6,9];
-let max = array.reduce((max , el)=>{
-    if (max <el){
-        return el ;
-    }else{
-        return max;
-    }
-});
-console.log(max);
+// let array = [1,4,2,5,6,7,8,7,6,9];
+// let max = array.reduce((max , el)=>{
+//     if (max <el){
+//         return el ;
+//     }else{
+//         return max;
+//     }
+// });
+// console.log(max);
+
+// PQ check if all numbers in our array are multiple of 1 or not
+
+let nums = [10,20,30,40];
+let ans = nums.every((el)=>
+    el%10 == 0
+);
+console.log (ans);
