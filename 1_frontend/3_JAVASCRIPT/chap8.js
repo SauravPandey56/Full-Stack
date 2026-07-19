@@ -89,10 +89,37 @@
 // });
 // console.log(max);
 
-// PQ check if all numbers in our array are multiple of 1 or not
+// // PQ check if all numbers in our array are multiple of 1 or not
 
-let nums = [10,20,30,40];
-let ans = nums.every((el)=>
-    el%10 == 0
-);
-console.log (ans);
+// let nums = [10,20,30,40];
+// let ans = nums.every((el)=>
+//     el%10 == 0
+// );
+// console.log (ans);
+
+// // create a function to find the min number in an array 
+
+// let arr = [1,2,3,4,5,6,7,8,0,-1];
+// let min = arr.reduce((min , el)=>{
+//     if(min <el){
+//         return min;
+//     }else{
+//         return el ;
+//     }
+// });
+
+// console.log(min);
+       //  or
+
+// function getMin(nums){
+//         let min = nums.reduce((min , el)=>{
+//         if(min <el){
+//             return min;
+//         }else{
+//             return el ;
+//         }
+//     });
+//     return min ;
+// }
+// let nums = [1,2,3,4,5,6,7,-22,-1,0];
+// console.log(getMin(nums)); // -22
