@@ -151,14 +151,32 @@
 // let nums = [...odd ,...even];
 // console.log(nums);
 
-// with object literals 
-const data = {
-    email : "ironmen@gmail.com",
-    password :"abcd"
-};
+// // with object literals 
+// const data = {
+//     email : "ironmen@gmail.com",
+//     password :"abcd"
+// };
 
-const datacopy = {...data.email,id:123 , country:"INDIA"};
+// const datacopy = {...data.email,id:123 , country:"INDIA"};
 
-let arr = [1,2,3,4,5];
-let obj1={...arr};
-let obj2 = {..."hello"};
+// let arr = [1,2,3,4,5];
+// let obj1={...arr};
+// let obj2 = {..."hello"};
+
+
+// // REST 
+
+// function  min(msg,...args){
+//     console.log(msg);
+//     return args.reduce((min,el)=>{
+//         if(min>el){
+//             return el ;
+//         }else{
+//             return min ;
+//         }
+//     });
+// }
+
+//DESTRUCTURING
+
+let names =["tony","bruce",]
