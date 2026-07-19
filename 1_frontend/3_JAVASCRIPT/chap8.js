@@ -67,3 +67,8 @@ let evry = [2,4,6];
 // some 
 let sme = [11,3,7,9];
 let reslt = sme.some((el)=> (el % 2 == 0));
+
+// REDUCE 
+
+let rdc = [1,2,3,4];
+let result = rdc.reduce ((res , el)=>(res +el));
