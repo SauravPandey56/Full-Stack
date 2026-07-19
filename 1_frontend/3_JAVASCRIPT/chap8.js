@@ -27,3 +27,24 @@ let ary =[
 ary.forEach((student)=>{
     console.log(student.marks);
 });
+
+// MAP
+let num = [1,2,3,4,5,66,7,77];
+let double = num.map((el)=>{
+    return el*el;
+});
+
+// for object 
+let students = [{
+    name : "saurav",
+    marks:86
+},
+{
+    name :"pankaj",
+    marks : 88
+}
+];
+
+let gpa = students.map((el)=>{
+    return el.marks/10 ;
+});
