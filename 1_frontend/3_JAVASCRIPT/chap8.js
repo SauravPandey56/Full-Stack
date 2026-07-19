@@ -138,15 +138,27 @@
 // Math.min (...arr);
 // console.log(...arr);
 
-// with Array literals
+// // with Array literals
+
+// let arr = [1,2,3,4,5];
+// let newArr = [...arr];
+
+
+// let chars = [..."hello"];
+
+// let odd = [1,3,5,7,9];
+// let even =[2,4,6,8,10];
+// let nums = [...odd ,...even];
+// console.log(nums);
+
+// with object literals 
+const data = {
+    email : "ironmen@gmail.com",
+    password :"abcd"
+};
+
+const datacopy = {...data.email,id:123 , country:"INDIA"};
 
 let arr = [1,2,3,4,5];
-let newArr = [...arr];
-
-
-let chars = [..."hello"];
-
-let odd = [1,3,5,7,9];
-let even =[2,4,6,8,10];
-let nums = [...odd ,...even];
-console.log(nums);
+let obj1={...arr};
+let obj2 = {..."hello"};
