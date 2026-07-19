@@ -48,3 +48,10 @@ let students = [{
 let gpa = students.map((el)=>{
     return el.marks/10 ;
 });
+
+// FILTER 
+
+let nums = [1,2,3,45,6,7,89,9,0];
+let ans = nums.filter ((el)=>{
+    return el<5;
+});
