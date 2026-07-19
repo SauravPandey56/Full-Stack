@@ -179,4 +179,6 @@
 
 //DESTRUCTURING
 
-let names =["tony","bruce",]
+let names =["tony","bruce","peter","steve"];
+let [winner , runnerup]= names;
+console.log (winner ,runnerup);
