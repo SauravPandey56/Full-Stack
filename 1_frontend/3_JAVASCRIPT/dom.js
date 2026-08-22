@@ -16,3 +16,18 @@
 //     smallImages[i].src = "assets/spiderman_img.pmg";
 //     console.log (`value of image no. ${i}is changed.`);
 // }
+
+let para = document.querySelector('p');
+para;
+console.dir(para);
+para.innertext;
+para.textContent;
+para.innerHTML;
+para.innerText = "ajffj"
+para.innerHTML = "<b>ajffj</b>"
+console.dir(para.innerHTML);
+
+let heading = document.querySelector("h1");
+    console.dir(heading);
+    heading.innerHTML=`<u>${heading.innerText}</u>`
+    console.dir(heading.innerHTML);
