@@ -17,6 +17,8 @@
 //     console.log (`value of image no. ${i}is changed.`);
 // }
 
+// manipulating by text
+
 // let para = document.querySelector('p');
 // para;
 // console.dir(para);
@@ -32,8 +34,42 @@
 // heading.innerHTML=`<u>${heading.innerText}</u>`
 // console.dir(heading.innerHTML);
 
+// manipulating Attribute/
+
+// let img = document.querySelector('img');
+// console.dir(img);
+// img.getAttribute('id');
+// img.setAttribute('id','spidermanImg');    
+// img.setAttribute('src','assets/creation_3.jpeg') 
+
+// manipulating by style 
+
+// let heading = document.querySelector('h1');
+// heading.style;
+// heading.style.color='purple';
+// heading.style.color='green';
+// heading.style.backgroundColor='red';
+
+// let links = document.querySelectorAll('.box a');
+
+// for (let i = 0 ; i<links.length ; i++){
+//     links[i].style.color= "yellow"
+// }
+
+// for(links of links ){
+//     links.style.color = "orange"
+// }
+
+// classList
+// Object.classList
+
+// Object.classList.add();
+// Object.classList.remove();
+// Object.classList.contains();
+// Object.classList.toggle();
+
+// navigation on Page [parent , child , previousElementsSibling/nextElementsSibling]
+
 let img = document.querySelector('img');
-console.dir(img);
-img.getAttribute('id');
-img.setAttribute('id','spidermanImg');    
-img.setAttribute('src','assets/creation_3.jpeg') 
+img.previousElementSibling.style.color="green"
+
