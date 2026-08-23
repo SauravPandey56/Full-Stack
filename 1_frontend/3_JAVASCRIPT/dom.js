@@ -71,5 +71,5 @@
 // navigation on Page [parent , child , previousElementsSibling/nextElementsSibling]
 
 let img = document.querySelector('img');
-img.previousElementSibling.style.color="green"
+img.previousElementSibling.style.color="purple"
 
