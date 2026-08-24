@@ -80,7 +80,7 @@
 
 // keyboard EVENT 
 
-let inp = document.querySelector("input");
+// let inp = document.querySelector("input");
 // keydown
 // inp.addEventListener("keydown",function(event){
 //     console.log(event);
@@ -153,3 +153,31 @@ let inp = document.querySelector("input");
 
 //     alert(`hi ${user.value},your password is set to ${pass.value}`);
 // });
+
+
+// change event and input event 
+
+// let form =document.querySelector("form");
+//  form.addEventListener("submit",function(event){
+//      event.preventDefault();
+//  });
+
+//   let user = document.querySelector("#user");
+
+//   user.addEventListener("change",function(){
+//     console.log("change event");
+//     console.log("final value = ",this.value)
+//   });
+
+//   user.addEventListener("input",function(){
+//     console.log("input event");
+//     console.log("final value = ",this.value)
+//   });
+
+  let inp = document.querySelector("#text");
+  let p = document.querySelector("P");
+
+  inp.addEventListener("input",function(){
+    console.log(inp.value);
+    p.innerText = inp.value;
+  });
