@@ -77,3 +77,38 @@
 //  console.log(event);
 //  console.log("button  double clicked")
 // })
+
+// keyboard EVENT 
+
+let inp = document.querySelector("input");
+// keydown
+// inp.addEventListener("keydown",function(event){
+//     console.log(event);
+//     console.log("key = ",event.key);
+//     console.log("code = ",event.code);
+//     console.log("key was pressed");
+// });
+
+// //keyup
+// inp.addEventListener("keyup",function(event){
+//     console.log(event);
+//     console.log("key = ",event.key);
+//     console.log("code = ",event.code);
+//     console.log("key was released");
+// });
+
+// inp.addEventListener("keydown",function(event){
+//      console.log("code = ",event.code);
+
+//      if(event.code == "KeyU"){
+//         console.log("character moves up");
+//      }else  if(event.code == "KeyD"){
+//         console.log("character moves down");
+//      }else  if(event.code == "KeyL"){
+//         console.log("character moves left");
+//      }else  if(event.code == "KeyR"){
+//         console.log("character moves right");
+//      }
+   
+// });
+
