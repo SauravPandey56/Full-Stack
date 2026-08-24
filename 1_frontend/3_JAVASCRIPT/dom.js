@@ -70,8 +70,8 @@
 
 // navigation on Page [parent , child , previousElementsSibling/nextElementsSibling]
 
-let img = document.querySelector('img');
-img.previousElementSibling.style.color="purple"
+// let img = document.querySelector('img');
+// img.previousElementSibling.style.color="purple"
 
 // Ading Elements 
 // [
@@ -106,9 +106,14 @@ img.previousElementSibling.style.color="purple"
 // p.insertAdjacentElement('afterend',btn);
 
 // remove elements
- let btn = document.createElement('button');
-// console.dir(btn);
-btn.innerText="click me ";
 
-let body = document.querySelector('body');
-body.removeChild(btn);
+//  let btn = document.createElement('button');
+//  console.dir(btn);
+// btn.innerText="click me ";
+// let box = document.querySelector('.box');
+// box.appendChild(btn);
+
+// let body = document.querySelector('body');
+//  box.removeChild(btn);
+
+// body.remove();
