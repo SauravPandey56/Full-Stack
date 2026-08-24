@@ -73,3 +73,34 @@
 let img = document.querySelector('img');
 img.previousElementSibling.style.color="purple"
 
+// Ading Elements 
+// [
+//     appendChild(Element);
+//     append(Element);
+//     prepend(Element);
+//     insertAdjacentElement('beforebegin',Element);
+//     insertAdjacentElement('afterbegin',Element);
+//     insertAdjacentElement('beforeend',Element);
+//     insertAdjacentElement('afterend',Element);
+// ]
+
+// let btn = document.createElement('button');
+// console.dir(btn);
+// btn.innerText="click me ";
+
+// let box = document.querySelector('.box');
+// box.appendChild(btn);
+
+// let p = document.createElement('p');
+// console.dir(p);
+// p.innerText="hi , i am bot :!";
+// let p = document.querySelector('p');
+// box.append(p);
+// p.append("hello here");
+// p.append(btn);
+// p.prepend(btn);
+
+// p.insertAdjacentElement('beforebegin',btn);
+// p.insertAdjacentElement('afterbegin',btn);
+// p.insertAdjacentElement('beforeend',btn);
+// p.insertAdjacentElement('afterend',btn);
