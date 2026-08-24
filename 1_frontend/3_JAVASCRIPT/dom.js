@@ -104,3 +104,11 @@ img.previousElementSibling.style.color="purple"
 // p.insertAdjacentElement('afterbegin',btn);
 // p.insertAdjacentElement('beforeend',btn);
 // p.insertAdjacentElement('afterend',btn);
+
+// remove elements
+ let btn = document.createElement('button');
+// console.dir(btn);
+btn.innerText="click me ";
+
+let body = document.querySelector('body');
+body.removeChild(btn);
