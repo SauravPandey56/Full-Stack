@@ -109,7 +109,6 @@ function show(colArr) {
     }
 }
 
-
 // Function to fetch colleges from the API
 async function getColleges(country) {
     try {
