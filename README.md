@@ -25,7 +25,7 @@ A frontend Spotify-inspired interface built while learning HTML and CSS.
 | **Type** | Frontend Project |
 | **Technologies** | HTML, CSS |
 | **Focus** | Layout, styling, structure, and UI implementation |
-| **Source** | [Open Project](./3_PROJECT/1_CSS%20Project/1-spotifyClone/) |
+| **Source** | [Open Project]([./3_PROJECT/1_CSS%20Project/1-spotifyClone](https://github.com/SauravPandey56/Full-Stack/tree/main/3_PROJECT)/) |
 
 ### 🧩 Mini Projects
 
