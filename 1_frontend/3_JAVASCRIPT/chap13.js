@@ -96,7 +96,7 @@ function show(colArr) {
     list.innerText = "";
 
     // Loop through all colleges
-    for (let col of colArr) {
+    for ( col of colArr) {
 
         // Create a new list item
         let li = document.createElement("li");
