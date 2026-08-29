@@ -70,3 +70,9 @@ function getElements(arr, num) {
 }
 
 console.log(getElements(arr, num));
+
+
+// Qs2. Write a JavaScript function to extract unique characters from a string.
+
+// Example: str = “abcdabcdefgggh”
+// ans = “abcdefgh”
