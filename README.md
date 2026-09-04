@@ -1,4 +1,4 @@
-# 💻 Full-Stack Development
+# 💻 Full-Stack Development MERN STACK
 
 > A practical repository documenting my progression from **frontend fundamentals to full-stack development** through structured learning, hands-on practice, assignments, and projects.
 
