@@ -8,7 +8,8 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 const wrapAsync = require("./utils/wrapAsync.js");
 const ExpressError = require("./utils/ExpressError.js");
-const { listingSchema } = require("./schema.js");
+const { listingSchema, reviewSchema } = require("./schema.js");
+const Review = require("./models/review.js");
 
 main()
   .then(() => {
@@ -32,17 +33,33 @@ app.get("/", (req, res) => {
   res.send("hi, I am root");
 });
 
-
 const validateListing = (req, res, next) => {
-    let { error } = listingSchema.validate(req.body);
+  let { error } = listingSchema.validate(req.body);
 
-    if (error) {
-        let errMsg = error.details.map((el) => el.message).join(",");
+  if (error) {
+    let errMsg = error.details.map((el) => el.message).join(",");
 
-        throw new ExpressError(400, errMsg);
-    } else {
-        next();
-    }
+    throw new ExpressError(400, errMsg);
+  } else {
+    next();
+  }
+};
+
+const validateReview = (req, res, next) => {
+  // Check if request body is empty
+  if (!req.body || Object.keys(req.body).length === 0) {
+    return next(new ExpressError(400, "Review body cannot be empty!"));
+  }
+
+  // Validate review data using Joi
+  let { error } = reviewSchema.validate(req.body);
+
+  if (error) {
+    let errMsg = error.details.map((el) => el.message).join(",");
+    return next(new ExpressError(400, errMsg));
+  }
+
+  next();
 };
 
 //IndexRoute
@@ -64,21 +81,20 @@ app.get(
   "/listings/:id",
   wrapAsync(async (req, res) => {
     let { id } = req.params;
-    const listing = await Listing.findById(id);
+    const listing = await Listing.findById(id).populate("reviews");
     res.render("listings/show.ejs", { listing });
   }),
 );
 
 //Create Route
 app.post(
-  "/listings",validateListing,
+  "/listings",
+  validateListing,
   wrapAsync(async (req, res, next) => {
-   
-
     // if (!req.body.listing) {
     //   throw new ExpressError(400, "send valid data for listing");
     // }
-     const newListing = new Listing(req.body.listing);
+    const newListing = new Listing(req.body.listing);
 
     // if (!newListing.title) {
     //   throw new ExpressError(400, "Title is missing!");
@@ -120,7 +136,8 @@ app.get(
 
 // Update Route
 app.put(
-  "/listings/:id",validateListing,
+  "/listings/:id",
+  validateListing,
   wrapAsync(async (req, res) => {
     // if (!req.body.listing) {
     //   throw new ExpressError(400, "send valid data for listing");
@@ -144,6 +161,40 @@ app.delete(
     console.log(deletedListing);
 
     res.redirect("/listings");
+  }),
+);
+
+// Reviews
+// Post Review Route
+app.post(
+  "/listings/:id/reviews",
+  validateReview,
+  wrapAsync(async (req, res) => {
+    let listing = await Listing.findById(req.params.id);
+    let newReview = new Review(req.body.review);
+
+    listing.reviews.push(newReview);
+
+    await newReview.save();
+    await listing.save();
+
+    res.redirect(`/listings/${listing._id}`);
+  }),
+);
+
+// Delete Review Route
+app.delete(
+  "/listings/:id/reviews/:reviewId",
+  wrapAsync(async (req, res) => {
+    let { id, reviewId } = req.params;
+
+    await Listing.findByIdAndUpdate(id, {
+      $pull: { reviews: reviewId },
+    });
+
+    await Review.findByIdAndDelete(reviewId);
+
+    res.redirect(`/listings/${id}`);
   }),
 );
 
